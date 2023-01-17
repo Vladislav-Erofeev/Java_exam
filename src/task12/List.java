@@ -1,7 +1,7 @@
-package task11;
+package task12;
 
-public class LinkedIntList{
-    private ListNode head;
+public class List {
+    public ListNode head;
 
     public void add(int value) {
         if(head == null) {
@@ -15,13 +15,9 @@ public class LinkedIntList{
         current.next = new ListNode(value, null);
     }
 
-    public void firstLast() {
-        ListNode tail = head;
-        while(tail.next != null)
-            tail = tail.next;
-        tail.next = head;
-        head = head.next;
-        tail.next.next = null;
+    public void pushForward(int value) {
+        ListNode newNode = new ListNode(value, head);
+        head = newNode;
     }
 
     public String toString() {
@@ -33,5 +29,4 @@ public class LinkedIntList{
         }
         return str + current.data + "]";
     }
-
 }

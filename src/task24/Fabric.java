@@ -6,7 +6,7 @@
 package task24;
 
 public interface Fabric {
-    java.lang.Number createNumber(int x);
+    Number createNumber(int x);
 
     ComplexNumber createComplexNumber(int x, int y);
 }

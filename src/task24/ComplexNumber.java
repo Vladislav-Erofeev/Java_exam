@@ -5,7 +5,7 @@
 
 package task24;
 
-public class ComplexNumber extends java.lang.Number {
+public class ComplexNumber extends Number {
     int im;
 
     public ComplexNumber(int x, int y) {
